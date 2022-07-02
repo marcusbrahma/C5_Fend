@@ -16,14 +16,14 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat './jenkins/scripts/test.bat'
+                bat '/jenkins/scripts/test.sh'
             }
         }
-        stage('Deliver') {
+        stage('Deliver') 
             steps {
-                bat './jenkins/scripts/deliver.bat'
+                bat '/jenkins/scripts/deliver.bat'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                bat './jenkins/scripts/kill.bat'
+                bat '/jenkins/scripts/kill.bat'
             }
         }
     }
