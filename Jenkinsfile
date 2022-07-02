@@ -7,6 +7,7 @@ pipeline {
     }
     environment {
         CI = 'true'
+        PATH = 
     }
     stages {
         stage('Build') {
@@ -16,7 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat '/jenkins/scripts/test.sh'
+                bat 'C:\Users\marcu\Documents\BITS\C5 - Agile and DevOps\Demo\test_demo.py'
             }
         }
         stage('Deliver') {
