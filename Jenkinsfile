@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'C:\Users\marcu\Documents\BITS\C5 - Agile and DevOps\Demo\test_demo.py'
+                bat 'C:/Users/marcu/Documents/BITS/C5 - Agile and DevOps/Demo/test_demo.py'
             }
         }
         stage('Deliver') {
