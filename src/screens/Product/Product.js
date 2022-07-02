@@ -73,7 +73,7 @@ export class Product extends Component {
                   <p className={style.productTitle}>{product.title}</p>
                   <p className={style.productPrice}>Order:{product.Order}</p>
                   <img src={product.image} alt={product.title} className={style.productImage} />
-                  <div className={style.button} onClick={()=>this.handleEdit(product.title,product.Order,product.id)}><p>Edit</p></div>
+                  <div className={style.button} id= {style.Edit} onClick={()=>this.handleEdit(product.title,product.Order,product.id)}><p>Edit</p></div>
                 </div>
               );
             })}
