@@ -16,15 +16,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'C:/Users/marcu/Documents/BITS/C5 - Agile and DevOps/Demo/test_demo.py'
+                bat './jenkins/scripts/test.sh'
             }
         }
-        stage('Deliver') {
-            steps {
-                bat '/jenkins/scripts/deliver.sh'
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                bat '/jenkins/scripts/kill.sh'
-            }
-        }
+       
     }
 }
