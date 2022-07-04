@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat 'C:/ProgramData/Jenkins/.jenkins/workspace/C5_frontend_app/jenkins/test.bat'
+                        bat './jenkins/test.bat'
                     }
                 }
     }
