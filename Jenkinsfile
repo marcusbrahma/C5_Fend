@@ -14,5 +14,6 @@ pipeline {
                 bat 'npm install'
             }
         }
-       
+     
     }
+}
