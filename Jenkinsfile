@@ -7,7 +7,7 @@ pipeline {
     }
     environment {
         CI = 'true'
-        PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
+        PATH = "C:/Program Files/Git/usr/bin;C:/Program Files/Git/bin;${env.PATH}"
     }
     stages {
         stage('Build') {
@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat './jenkins/scripts/test.sh'
+                        sh './jenkins/scripts/test.sh'
                     }
                 }
     }
