@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat 'npm test'
+                        echo 'npm test'
                     }
                 }
     }
