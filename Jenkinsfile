@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        bat '.jenkins/scripts/test.sh'
+                        cd 'C:/ProgramData/Jenkins/.jenkins/workspace/C5_frontend_app/jenkins/'
+                        bat 'test.sh'
                     }
                 }
     }
