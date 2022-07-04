@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        call 'test.bat'
+                        bat 'test.bat'
                     }
                 }
     }
