@@ -18,6 +18,13 @@ pipeline {
                         steps {
                             dir ("jenkins"){
                             bat 'deliver.bat'
+                            }
+                            }
+                        }
+        stage('Deploy') {
+                        steps {
+                            dir ("jenkins"){
+                            bat 'deploy.bat'
                             input message: 'Finished using the web site? (Click "Proceed" to continue)'
                             }
                             }
