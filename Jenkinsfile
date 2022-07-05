@@ -16,8 +16,9 @@ pipeline {
         }
         stage('Test') {
                     steps {
-                        dir ("jenkins")
-                        bat 'test.bat'
+                        dir ("jenkins"){
+                        bat "test.bat"
+                        }
                     }
                 }
     }
