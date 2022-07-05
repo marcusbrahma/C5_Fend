@@ -14,13 +14,6 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Test') {
-                    steps {
-                        dir ("jenkins"){
-                        bat "test.bat"
-                        }
-                    }
-                }
         stage('Deliver') {
                         steps {
                             dir ("jenkins"){
