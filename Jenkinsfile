@@ -21,5 +21,13 @@ pipeline {
                         }
                     }
                 }
+        stage('Deliver') {
+                        steps {
+                            dir ("jenkins"){
+                            bat 'deliver.bat'
+                            input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                            }
+                            }
+                        }
     }
 }
